@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grabbl</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon_grabbl.png" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .navbar-brand {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        color: #d40c0c;
+        font-size: 2rem;
+      }
+      .btn-pill {
+        border-radius: 50px;
+      }
+      .section-title {
+        font-weight: bold;
+        color: #000;
+      }
+      .download-btn img {
+        height: 50px;
+        width: auto;
+      }
+      .content-image {
+        max-width: 80%;
+        height: auto;
+      }
+      .spacing-top {
+        margin-top: 5rem; /* Added spacing above the first image row */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white py-3 border-bottom"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand ms-5" href="#">Grabbl</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link mx-3" href="#">For Customers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-3" href="#">Become a Merchant</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-3" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex me-5">
+          <a href="#" class="btn btn-danger btn-pill px-4">Download</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Who We Are Section -->
+    <section class="text-center my-5">
+      <img
+        src="assets/grabbl_logo.png"
+        alt="Grabbl Logo"
+        class="mb-4"
+        style="width: 150px"
+      />
+      <h1 class="fw-bold">Who We Are</h1>
+      <p class="mx-auto w-50 text-muted">
+        Grabbl is an alcohol and snack delivery app.<br />
+        Browse any liquor and convenience store products.<br />
+        And Grabbl will deliver for you.
+      </p>
+    </section>
+
+    <!-- 3 Sections with Images and Buttons -->
+    <section class="container my-5">
+      <!-- Row 1 -->
+      <div class="row align-items-center spacing-top mb-5">
+        <div class="col-md-6">
+          <img
+            src="assets/image1.png"
+            alt="Customer Ordering"
+            class="img-fluid rounded content-image"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2 class="section-title">For Customers</h2>
+          <p class="text-muted">
+            With thousands of liquor and convenience stores at your fingertips,
+            Grabbl delivers products to you from your local stores.
+          </p>
+          <a href="#" class="btn btn-danger btn-pill px-4">Start an Order</a>
+        </div>
+      </div>
+
+      <!-- Row 2 (Become a Merchant) -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+          <img
+            src="assets/image2.png"
+            alt="Merchant Partner"
+            class="img-fluid rounded content-image"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2 class="section-title">Become a Merchant</h2>
+          <p class="text-muted">
+            Selling on Grabbl gives businesses more control and profits, and the
+            option to handle delivery either 3rd party or self-deliver.
+          </p>
+          <a href="#" class="btn btn-danger btn-pill px-4">Sign Up</a>
+        </div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img
+            src="assets/image3.png"
+            alt="App Showcase"
+            class="img-fluid rounded content-image"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2 class="section-title">Grabbl</h2>
+          <p class="text-muted">
+            App designed to easily find your cravings. Get drinks and food
+            ordered safely to you.
+          </p>
+          <div class="download-btn d-flex gap-3">
+            <a href="#">
+              <img src="assets/apple_download.png" alt="App Store" />
+            </a>
+            <a href="#">
+              <img src="assets/googleplay.png" alt="Google Play" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
