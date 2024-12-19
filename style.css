@@ -1,0 +1,184 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent element */
+}
+
+.navbar-brand {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #d40c0c;
+  font-size: 2rem;
+}
+
+.secondary-background {
+  background-color: #fff0ed;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.btn-pill {
+  color: #fff0ed;
+  background-color: #d40c0c;
+  border-radius: 50px;
+}
+
+.section-content {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  text-align: center;
+  margin: 0!;
+}
+
+.announcement-bar {
+  background-color: #d40c0c;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.section-title {
+  font-weight: bold;
+  color: #000;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 0!;
+  margin: 0!;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-top: 35px;
+  padding-bottom: 15px;
+  gap: 150px;
+}
+
+.footer-column {
+  text-align: start;
+}
+
+.footer-column h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: medium;
+  color: white;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: light;
+  color: white;
+  font-size: 0.7rem;
+  margin-bottom: 0.2rem;
+}
+
+.footer-column p {
+  margin: 0.5rem 0;
+}
+
+.download-btn-img {
+  max-width: 140px; /* Ensure both buttons have the same width */
+  height: auto;
+}
+
+.download-btn-img-footer {
+  max-height: 30px; /* Ensure both buttons have the same width */
+  width: auto;
+}
+
+.download-btn-container-footer a {
+  display: block; /* Make the anchor tags block elements */
+  margin-bottom: 0.5rem; /* Add space between buttons */
+}
+
+.icon-img {
+  max-height: 20px; /* Ensure both buttons have the same width */
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.content-image {
+  max-width: 360px; /* Ensure image doesn't grow larger than 360px */
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Center align on smaller screens */
+@media (max-width: 768px) {
+  .image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem; /* Spacing between image and text */
+  }
+
+  .text-container {
+    text-align: center;
+  }
+
+  /* Hide the Download button when the hamburger menu is shown */
+  .download-btn {
+    display: none;
+  }
+
+  /* Left-align the hamburger menu links */
+  .navbar-collapse {
+    text-align: left;
+  }
+}
+
+/* Adjust margin and padding to reduce white space on full-width screens */
+@media (min-width: 992px) {
+  .row {
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    gap: 0rem; /* Add a small gap between image and text */
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem; /* Spacing between image and text */
+  }
+
+  /* Ensure image stays at max width of 360px */
+  .content-image {
+    max-width: 360px;
+  }
+
+  /* Show the Download button only on large screens */
+  .d-lg-block {
+    display: block;
+  }
+
+  /* Center-align the navbar links on large screens */
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* Center-align the download buttons on large screens */
+  .download-btn-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem; /* Add spacing between the buttons */
+    margin-top: 1rem; /* Add margin-top to separate the buttons from the text */
+  }
+}
