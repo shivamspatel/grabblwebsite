@@ -93,6 +93,10 @@ a {
   margin: 0.5rem 0;
 }
 
+.footer-column a:hover {
+  text-decoration: underline; /* Adds underline on hover for emphasis */
+}
+
 .download-btn-img {
   max-width: 140px; /* Ensure both buttons have the same width */
   height: auto;
@@ -118,6 +122,35 @@ a {
   max-width: 360px; /* Ensure image doesn't grow larger than 360px */
   width: 100%;
   height: auto; /* Maintain aspect ratio */
+}
+
+/* Privacy Policy*/
+.footer-legal {
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically (if needed) */
+  margin-top: 20px; /* Adds spacing from other footer elements */
+  width: 100%; /* Ensures it spans the entire footer width */
+}
+
+.footer-legal a {
+  margin: 0 10px; /* Adds spacing between links */
+  color: #ffffff; /* Customize link color */
+  text-decoration: none; /* Removes underline for a cleaner look */
+  font-size: 12px; /* Adjust font size */
+  margin-bottom: 1rem;
+}
+
+.footer-legal a:hover {
+  text-decoration: underline; /* Adds underline on hover for emphasis */
+}
+
+.footer-inc-text {
+  position: absolute; /* Position this element relative to the footer-legal container */
+  right: 148px; /* Adjust spacing from the right edge */
+  color: #ffffff; /* Text color */
+  font-size: 12px; /* Adjust font size */
+  margin-bottom: 1rem;
 }
 
 /* Center align on smaller screens */
